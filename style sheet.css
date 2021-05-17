@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: right;
+    padding: 20px;
+}
+nav{
+    flex: 8;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+
+    display: inline-flex;
+    margin-right: 20px;
+    
+}
+a{
+    text-decoration: rgb(71, 255, 209);
+    color: black;
+    font-size: 130%;
+}
+p{
+    text-justify: auto;
+    margin-left: 3%;
+    margin-right: 0%;
+    margin-top: 2%;
+color:black;
+font-size: 150%;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px; 
+    padding-right: 25px;
+}
+
+
+h3{
+    font-size: 300%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    text-shadow: rgb(53, 29, 124);
+}
+h1{
+    text-align: center;
+}
+
+.change_content::after{
+    content: "";
+    animation: changetext 9s infinite linear;
+    color:brown;
+}
+@keyframes changetext{
+
+    0%{content:"DOORS";}
+    20%{ content:"SOFAS";}
+    35%{ content:"BEDS";}
+    60%{ content:"WINDOWS";}
+    80%{ content:"DINING TABLE";}
+    100%{ content:"ALMIRAH";}
+
+}
+address{
+    font-weight: 900;
+    font-family: inherit;
+}
+a button{
+    color: brown;
+    font-weight: bolder;
+    font-size: 20px;
+    font-display: transparent;
+}
